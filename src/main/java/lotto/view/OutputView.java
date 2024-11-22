@@ -2,9 +2,9 @@ package lotto.view;
 
 import java.util.List;
 import java.util.Map;
-import lotto.Lotto;
 import lotto.constant.Constant;
 import lotto.constant.ViewMessage;
+import lotto.model.Lotto;
 
 public class OutputView {
     public void printLotto(List<Lotto> lottoList) {
@@ -22,17 +22,17 @@ public class OutputView {
     }
 
     private void printLottoResult(Map<Integer, Integer> lottoRanking) {
-        printFifthPlace(lottoRanking.get(Constant.FIFTH_PLACE.getConstant()));
-        printFourthPlace(lottoRanking.get(Constant.FOURTH_PLACE.getConstant()));
-        printThirdPlace(lottoRanking.get(Constant.THIRD_PLACE.getConstant()));
-        printSecondPlace(lottoRanking.get(Constant.SECOND_PLACE.getConstant()));
-        printFirstPlace(lottoRanking.get(Constant.FIRST_PLACE.getConstant()));
+        printFifthPlace(lottoRanking.get(Constant.FIFTH_PLACE.toStringConstant()));
+        printFourthPlace(lottoRanking.get(Constant.FOURTH_PLACE.toStringConstant()));
+        printThirdPlace(lottoRanking.get(Constant.THIRD_PLACE.toStringConstant()));
+        printSecondPlace(lottoRanking.get(Constant.SECOND_PLACE.toStringConstant()));
+        printFirstPlace(lottoRanking.get(Constant.FIRST_PLACE.toStringConstant()));
     }
 
     private void printFifthPlace(int wins) {
         System.out.println(
                 ViewMessage.LOTTO_THREE_MATCHES.getViewMessage(
-                        Constant.THREE_MATCHES_MONEY.getConstant(),
+                        Constant.THREE_MATCHES_MONEY.toStringConstant(),
                         wins
                 )
         );
@@ -41,7 +41,7 @@ public class OutputView {
     private void printFourthPlace(int wins) {
         System.out.println(
                 ViewMessage.LOTTO_THREE_MATCHES.getViewMessage(
-                        Constant.FOUR_MATCHES_MONEY.getConstant(),
+                        Constant.FOUR_MATCHES_MONEY.toStringConstant(),
                         wins
                 )
         );
@@ -50,7 +50,7 @@ public class OutputView {
     private void printThirdPlace(int wins) {
         System.out.println(
                 ViewMessage.LOTTO_THREE_MATCHES.getViewMessage(
-                        Constant.FIVE_MATCHES_MONEY.getConstant(),
+                        Constant.FIVE_MATCHES_MONEY.toStringConstant(),
                         wins
                 )
         );
@@ -59,7 +59,7 @@ public class OutputView {
     private void printSecondPlace(int wins) {
         System.out.println(
                 ViewMessage.LOTTO_THREE_MATCHES.getViewMessage(
-                        Constant.FIVE_MATCHES_BONUS_MONEY.getConstant(),
+                        Constant.FIVE_MATCHES_BONUS_MONEY.toStringConstant(),
                         wins
                 )
         );
@@ -68,7 +68,7 @@ public class OutputView {
     private void printFirstPlace(int wins) {
         System.out.println(
                 ViewMessage.LOTTO_THREE_MATCHES.getViewMessage(
-                        Constant.SIX_MATCHES_MONEY.getConstant(),
+                        Constant.SIX_MATCHES_MONEY.toStringConstant(),
                         wins
                 )
         );

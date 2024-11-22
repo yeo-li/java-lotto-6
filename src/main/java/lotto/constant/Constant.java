@@ -12,7 +12,10 @@ public enum Constant {
     FOURTH_PLACE(4),
     THIRD_PLACE(3),
     SECOND_PLACE(2),
-    FIRST_PLACE(1);
+    FIRST_PLACE(1),
+    MIN_RANGE(1),
+    MAX_RANGE(45),
+    NUMBER_OF_LOTTO(6);
 
 
     private int constant;
@@ -21,7 +24,11 @@ public enum Constant {
         this.constant = constant;
     }
 
-    public String getConstant(Object... args) {
+    public int getConstant() {
+        return this.constant;
+    }
+
+    public String toStringConstant(Object... args) {
         String formatConstant = NumberFormat.getInstance().format(constant);
         return java.text.MessageFormat.format(formatConstant, args);
     }
