@@ -15,7 +15,9 @@ public enum Constant {
     FIRST_PLACE(1),
     MIN_RANGE(1),
     MAX_RANGE(45),
-    NUMBER_OF_LOTTO(6);
+    NUMBER_OF_LOTTO(6),
+    NO_RANK(-1),
+    MONEY_MIN_UNIT(1000);
 
 
     private int constant;
