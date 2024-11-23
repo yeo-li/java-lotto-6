@@ -20,7 +20,7 @@ public enum Constant {
     MONEY_MIN_UNIT(1000);
 
 
-    private int constant;
+    private final int constant;
 
     private Constant(int constant) {
         this.constant = constant;
