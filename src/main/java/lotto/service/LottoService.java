@@ -2,6 +2,7 @@ package lotto.service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import lotto.constant.Constant;
 import lotto.model.Lotto;
 
@@ -32,6 +33,21 @@ public class LottoService {
             return Constant.FIRST_PLACE.getConstant();
         }
         return Constant.NO_RANK.getConstant();
+    }
+
+    public double calculateRateOfReturn(Map<Integer, Integer> lottoRanking, int money) {
+        int totalAmount = 0;
+        totalAmount += lottoRanking.get(Constant.FIFTH_PLACE.getConstant()) * Constant.FIFTH_PLACE_MONEY.getConstant();
+        totalAmount +=
+                lottoRanking.get(Constant.FOURTH_PLACE.getConstant()) * Constant.FOURTH_PLACE_MONEY.getConstant();
+        totalAmount +=
+                lottoRanking.get(Constant.FOURTH_PLACE.getConstant()) * Constant.FOURTH_PLACE_MONEY.getConstant();
+        totalAmount +=
+                lottoRanking.get(Constant.FOURTH_PLACE.getConstant()) * Constant.FOURTH_PLACE_MONEY.getConstant();
+        totalAmount +=
+                lottoRanking.get(Constant.FOURTH_PLACE.getConstant()) * Constant.FOURTH_PLACE_MONEY.getConstant();
+
+        return Math.round((double) totalAmount / money * 100 * 100.0) / 100.0;
     }
 
 }

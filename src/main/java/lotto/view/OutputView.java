@@ -32,7 +32,7 @@ public class OutputView {
     private void printFifthPlace(int wins) {
         System.out.println(
                 ViewMessage.LOTTO_THREE_MATCHES.getViewMessage(
-                        Constant.THREE_MATCHES_MONEY.toStringConstant(),
+                        Constant.FIFTH_PLACE_MONEY.toStringConstant(),
                         wins
                 )
         );
@@ -41,7 +41,7 @@ public class OutputView {
     private void printFourthPlace(int wins) {
         System.out.println(
                 ViewMessage.LOTTO_THREE_MATCHES.getViewMessage(
-                        Constant.FOUR_MATCHES_MONEY.toStringConstant(),
+                        Constant.FOURTH_PLACE_MONEY.toStringConstant(),
                         wins
                 )
         );
@@ -50,7 +50,7 @@ public class OutputView {
     private void printThirdPlace(int wins) {
         System.out.println(
                 ViewMessage.LOTTO_THREE_MATCHES.getViewMessage(
-                        Constant.FIVE_MATCHES_MONEY.toStringConstant(),
+                        Constant.THIRD_PLACE_MONEY.toStringConstant(),
                         wins
                 )
         );
@@ -59,7 +59,7 @@ public class OutputView {
     private void printSecondPlace(int wins) {
         System.out.println(
                 ViewMessage.LOTTO_THREE_MATCHES.getViewMessage(
-                        Constant.FIVE_MATCHES_BONUS_MONEY.toStringConstant(),
+                        Constant.SECOND_PLACE_MONEY.toStringConstant(),
                         wins
                 )
         );
@@ -68,7 +68,7 @@ public class OutputView {
     private void printFirstPlace(int wins) {
         System.out.println(
                 ViewMessage.LOTTO_THREE_MATCHES.getViewMessage(
-                        Constant.SIX_MATCHES_MONEY.toStringConstant(),
+                        Constant.FIRST_PLACE_MONEY.toStringConstant(),
                         wins
                 )
         );
