@@ -14,7 +14,8 @@ public enum ViewMessage {
     LOTTO_FIVE_MATCHES_BONUS("5개 일치, 보너스 볼 일치 ({0}원) - {1}개"),
     LOTTO_SIX_MATCHES("6개 일치 ({0}원) - {1}개"),
     WINNING_STATISTIC("당첨 통계"),
-    SEPARATOR("---"),
+    OUTPUT_SEPARATOR("---"),
+    PARSER_SEPARATOR(","),
     RATE_OF_RETURN("총 수익률은 {0}%입니다.");
 
 

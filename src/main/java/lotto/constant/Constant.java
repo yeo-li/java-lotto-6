@@ -30,6 +30,7 @@ public enum Constant {
         return this.constant;
     }
 
+
     public String toStringConstant(Object... args) {
         String formatConstant = NumberFormat.getInstance().format(constant);
         return java.text.MessageFormat.format(formatConstant, args);

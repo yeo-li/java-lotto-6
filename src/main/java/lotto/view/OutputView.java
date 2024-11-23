@@ -16,7 +16,7 @@ public class OutputView {
 
     public void printWinningStatistic(Map<Integer, Integer> lottoRanking, double rateOfReturn) {
         System.out.println(ViewMessage.WINNING_STATISTIC.getViewMessage());
-        System.out.println(ViewMessage.SEPARATOR.getViewMessage());
+        System.out.println(ViewMessage.OUTPUT_SEPARATOR.getViewMessage());
         printLottoResult(lottoRanking);
         System.out.println(ViewMessage.RATE_OF_RETURN.getViewMessage(rateOfReturn));
     }
